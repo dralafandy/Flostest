@@ -1,15 +1,14 @@
 import streamlit as st
 from finance_manager import FinanceManager
 from mobile_styles import apply_mobile_styles  # Import mobile styles
-from styles import apply_sidebar_styles, apply_topbar_styles  # Import other styles
+from styles import apply_sidebar_styles, apply_topbar_styles  # Import other 
+# Set page configuration
+st.set_page_config(page_title="FloosAfandy - إحسبها يا عشوائي !!", layout="wide")
 
 # Apply styles
 apply_mobile_styles()
 apply_sidebar_styles()
 apply_topbar_styles()
-
-# Set page configuration
-st.set_page_config(page_title="FloosAfandy - إحسبها يا عشوائي !!", layout="wide")
 
 # Initialize session state
 if "user_id" not in st.session_state:
