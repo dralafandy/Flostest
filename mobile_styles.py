@@ -17,4 +17,10 @@ def apply_mobile_styles():
                 h2 {
                     font-size: 1.3rem !important;
                 }
-                .stButton button
+                .stButton button {
+                    min-width: 100px;
+                    padding: 0.5rem;
+                }
+            }
+        </style>
+    """, unsafe_allow_html=True)
